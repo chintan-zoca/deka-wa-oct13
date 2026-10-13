@@ -1,163 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Deka+ Washington — Meta Ads update, 13 Sep to 13 Oct 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Deka+ Washington | Meta Ads Update, 13 Sep to 13 Oct 2026</title>
 <style>
   :root {
-    --bg: #faf9f6;
-    --ink: #1a1a1a;
-    --muted: #6b6b6b;
-    --rule: #e4e2dc;
-    --accent: #8b1e3f;
-    --panel: #ffffff;
-    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --ink: #1a1a2e;
+    --muted: #6b7280;
+    --accent: #c2185b;
+    --accent-soft: #fce4ec;
+    --green: #1b7a43;
+    --green-soft: #e6f4ea;
+    --amber: #a16207;
+    --amber-soft: #fef3c7;
+    --slate: #475569;
+    --slate-soft: #eef2f7;
+    --line: #e5e7eb;
+    --bg: #faf9f7;
+    --card: #ffffff;
   }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
   }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 56px 28px 96px; }
-  header { border-bottom: 1px solid var(--rule); padding-bottom: 20px; margin-bottom: 32px; }
-  .eyebrow {
-    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--accent); font-weight: 600; margin-bottom: 8px;
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 56px 0 48px;
   }
-  h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.01em; font-weight: 700; }
-  .window { color: var(--muted); font-size: 15px; }
-  h2 {
-    font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--muted); font-weight: 600;
-    margin: 40px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    color: #f8bbd0;
+    font-weight: 700;
+    margin-bottom: 14px;
   }
-  table.numbers {
-    width: 100%; border-collapse: collapse; background: var(--panel);
-    border: 1px solid var(--rule); border-radius: 8px; overflow: hidden;
-    font-family: var(--mono); font-size: 14px;
+  h1 { font-size: 34px; line-height: 1.2; font-weight: 800; margin-bottom: 12px; }
+  .sub { color: #cbd5e1; font-size: 16px; max-width: 640px; }
+  .meta { margin-top: 18px; font-size: 13px; color: #94a3b8; }
+  section { padding: 48px 0 8px; }
+  h2 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
+  .h2-bar {
+    width: 44px; height: 4px; background: var(--accent);
+    border-radius: 2px; margin: 10px 0 24px;
   }
-  table.numbers th, table.numbers td {
-    padding: 10px 14px; border-bottom: 1px solid var(--rule);
-    text-align: right; white-space: nowrap;
-  }
-  table.numbers th:first-child, table.numbers td:first-child {
-    text-align: left; font-family: "Inter", sans-serif;
-  }
-  table.numbers thead th {
-    background: #f3f1ec; color: var(--muted);
-    font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
-  }
-  table.numbers tbody tr:last-child td { border-bottom: none; }
-  table.numbers tr.indent td:first-child { padding-left: 32px; color: var(--muted); }
-  table.numbers tr.group-head td { background: #faf9f6; font-weight: 600; }
-  table.numbers tr.total td { background: #f3f1ec; font-weight: 700; }
-  .leads { display: grid; gap: 24px; }
-  .bucket {
-    background: var(--panel); border: 1px solid var(--rule); border-radius: 8px;
-    padding: 18px 22px;
-  }
-  .bucket-title {
-    font-size: 14px; font-weight: 700; margin: 0 0 10px;
+  h3 {
+    font-size: 18px; font-weight: 800;
+    margin: 24px 0 12px;
     display: flex; align-items: baseline; gap: 10px;
   }
-  .bucket-title .count {
-    font-family: var(--mono); color: var(--muted); font-size: 13px; font-weight: 500;
+  h3 .count {
+    font-size: 14px; font-weight: 600; color: var(--muted);
+    font-variant-numeric: tabular-nums;
   }
-  .bucket-title .sub {
-    color: var(--muted); font-weight: 500; font-size: 13px;
+  h3 .tag {
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 2px 9px; border-radius: 999px;
   }
-  .bucket ul { margin: 0; padding: 0 0 0 18px; }
-  .bucket li { margin: 6px 0; }
-  .bucket li strong { font-weight: 600; }
-  .inline-list { margin: 4px 0 0; color: var(--ink); }
-  .inline-list .label { color: var(--muted); font-weight: 500; margin-right: 6px; }
-  footer { color: var(--muted); font-size: 12px; margin-top: 48px; text-align: center; }
-  @media (max-width: 560px) {
-    .wrap { padding: 32px 18px 64px; }
-    h1 { font-size: 22px; }
-    table.numbers { font-size: 12.5px; }
-    table.numbers th, table.numbers td { padding: 8px 10px; }
+  .tag.booked    { background: var(--green-soft);  color: var(--green); }
+  .tag.progress  { background: var(--amber-soft);  color: var(--amber); }
+  .tag.unresp    { background: var(--slate-soft);  color: var(--slate); }
+  .tag.confirm   { background: var(--accent-soft); color: var(--accent); }
+  .tag.closed    { background: #f1f5f9;            color: #64748b; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 18px 16px;
+  }
+  .card .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; }
+  .card .big { font-size: 30px; font-weight: 800; margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
+  .card .note { font-size: 13px; color: var(--muted); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 14.5px;
+    margin-bottom: 26px;
+  }
+  th {
+    text-align: left;
+    background: #f3f4f6;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #4b5563;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  td { padding: 11px 14px; border-bottom: 1px solid #f1f2f4; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.indent td:first-child { padding-left: 32px; color: var(--muted); }
+  tr.rule-top td { border-top: 1px solid var(--line); }
+
+  .lead-table td.name { font-weight: 700; width: 180px; white-space: nowrap; }
+  .inline-list {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    margin-bottom: 12px;
+  }
+  .inline-list .cat {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); font-weight: 700; margin-right: 8px;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 28px 0 44px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 27px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px 10px; }
+    .lead-table td.name { width: auto; white-space: normal; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <div class="eyebrow">Deka+ Washington</div>
-    <h1>Meta Ads update</h1>
-    <div class="window">13 Sep to 13 Oct 2026</div>
-  </header>
-
-  <h2>Numbers</h2>
-  <table class="numbers">
-    <thead>
-      <tr><th></th><th>Lash</th><th>Tox</th><th>Total</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Total spend</td><td>$493.05</td><td>$492.79</td><td>$985.84</td></tr>
-      <tr><td>Total leads</td><td>19</td><td>11</td><td>30</td></tr>
-      <tr class="indent"><td>verified real people</td><td>12</td><td>5</td><td>17</td></tr>
-      <tr class="indent"><td>Meta-reported, to confirm</td><td>7</td><td>6</td><td>13</td></tr>
-      <tr><td>Booked</td><td>2</td><td>2</td><td>4</td></tr>
-      <tr><td>In progress (started, open)</td><td>1</td><td>0</td><td>1</td></tr>
-      <tr><td>Unresponsive (AI following up)</td><td>7</td><td>1</td><td>8</td></tr>
-      <tr><td>Closed (not interested / DNC)</td><td>2</td><td>2</td><td>4</td></tr>
-      <tr class="group-head"><td colspan="4">Rates</td></tr>
-      <tr><td>Cost per lead (all 30)</td><td>$25.95</td><td>$44.80</td><td>$32.86</td></tr>
-      <tr><td>Cost per lead (verified only)</td><td>$41.09</td><td>$98.56</td><td>$57.99</td></tr>
-      <tr><td>Lead-to-booking rate</td><td>11%</td><td>18%</td><td>13%</td></tr>
-    </tbody>
-  </table>
-
-  <h2>Lead by lead</h2>
-  <div class="leads">
-
-    <section class="bucket">
-      <div class="bucket-title">Booked <span class="count">(4)</span></div>
-      <ul>
-        <li><strong>Jessica Pociask</strong> — Lash, full set + brow lamination $159.98, refill was 6 Oct (confirming it happened).</li>
-        <li><strong>Marsha Myers</strong> — Lash, TrueXpress full set on 3 Oct. Called again 10 Oct to schedule another service. Botox still awaiting payment.</li>
-        <li><strong>Autumn Takacs</strong> — Tox. Service, date and value still to be filled in.</li>
-        <li><strong>Dana Tucker</strong> — Tox, Botox held for 24 Oct, card-on-file link sent, not yet paid.</li>
-      </ul>
-    </section>
-
-    <section class="bucket">
-      <div class="bucket-title">In progress <span class="count">(1)</span></div>
-      <ul>
-        <li><strong>Krystle Mcmanhan</strong> — Lash. Still sitting at "booking requested" in Raft with no appointment, unchanged for six days. Needs a direct chase.</li>
-      </ul>
-    </section>
-
-    <section class="bucket">
-      <div class="bucket-title">Unresponsive <span class="count">(8)</span> <span class="sub">— AI still following up</span></div>
-      <p class="inline-list"><span class="label">Lash:</span>Kim Bell, Jeannine Motycki, Victoria Howell, Cherissa Anderson, Amanda Shank, Erika Boston, Ali Stanley</p>
-      <p class="inline-list"><span class="label">Tox:</span>Jessica Bazzoli</p>
-    </section>
-
-    <section class="bucket">
-      <div class="bucket-title">Status to confirm <span class="count">(13)</span></div>
-      <ul>
-        <li>6 new Meta-reported leads from 8 to 13 Oct (Lash 4, Tox 2). All 6 are active conversation.</li>
-      </ul>
-    </section>
-
-    <section class="bucket">
-      <div class="bucket-title">Closed <span class="count">(4)</span></div>
-      <ul>
-        <li><strong>Ashley Markle</strong> — not interested.</li>
-        <li><strong>Jeni Powell</strong> — do not contact.</li>
-        <li><strong>Chelsea Huber</strong> — Tox, not interested.</li>
-        <li><strong>Dana Mariano</strong> — Tox, cannot travel to Washington.</li>
-      </ul>
-    </section>
-
+<header>
+  <div class="wrap">
+    <div class="kicker">Meta Ads Update</div>
+    <h1>Deka+ Washington</h1>
+    <p class="sub">13 Sep to 13 Oct 2026</p>
   </div>
+</header>
 
-</div>
+<section>
+  <div class="wrap">
+    <h2>Numbers</h2>
+    <div class="h2-bar"></div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="label">Total spend</div>
+        <div class="big">$985.84</div>
+        <div class="note">$493.05 Lash &middot; $492.79 Tox</div>
+      </div>
+      <div class="card">
+        <div class="label">Total leads</div>
+        <div class="big">30</div>
+        <div class="note">19 Lash &middot; 11 Tox</div>
+      </div>
+      <div class="card">
+        <div class="label">Booked</div>
+        <div class="big">4</div>
+        <div class="note">2 Lash &middot; 2 Tox</div>
+      </div>
+      <div class="card">
+        <div class="label">Lead-to-booking rate</div>
+        <div class="big">13%</div>
+        <div class="note">11% Lash &middot; 18% Tox</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th class="num">Lash</th>
+          <th class="num">Tox</th>
+          <th class="num">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Total spend</td><td class="num">$493.05</td><td class="num">$492.79</td><td class="num">$985.84</td></tr>
+        <tr><td>Total leads</td><td class="num">19</td><td class="num">11</td><td class="num">30</td></tr>
+        <tr class="indent"><td>verified real people</td><td class="num">12</td><td class="num">5</td><td class="num">17</td></tr>
+        <tr class="indent"><td>Meta-reported, to confirm</td><td class="num">7</td><td class="num">6</td><td class="num">13</td></tr>
+        <tr class="rule-top"><td>Booked</td><td class="num">2</td><td class="num">2</td><td class="num">4</td></tr>
+        <tr><td>In progress (started, open)</td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+        <tr><td>Unresponsive (AI following up)</td><td class="num">7</td><td class="num">1</td><td class="num">8</td></tr>
+        <tr><td>Closed (not interested / DNC)</td><td class="num">2</td><td class="num">2</td><td class="num">4</td></tr>
+        <tr class="rule-top"><td>Lead-to-booking rate</td><td class="num">11%</td><td class="num">18%</td><td class="num">13%</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Lead by lead</h2>
+    <div class="h2-bar"></div>
+
+    <h3>Booked <span class="count">(4)</span> <span class="tag booked">Booked</span></h3>
+    <table class="lead-table">
+      <tbody>
+        <tr><td class="name">Jessica Pociask</td><td>Lash, full set + brow lamination $159.98. Refill was 6 Oct (confirming it happened).</td></tr>
+        <tr><td class="name">Marsha Myers</td><td>Lash, TrueXpress full set on 3 Oct. Called again 10 Oct to schedule another service. Botox still awaiting payment.</td></tr>
+        <tr><td class="name">Autumn Takacs</td><td>Tox. Service, date and value still to be filled in.</td></tr>
+        <tr><td class="name">Dana Tucker</td><td>Tox, Botox held for 24 Oct, card-on-file link sent, not yet paid.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>In progress <span class="count">(1)</span> <span class="tag progress">Open</span></h3>
+    <table class="lead-table">
+      <tbody>
+        <tr><td class="name">Krystle Mcmanhan</td><td>Lash. Still sitting at "booking requested" in Raft with no appointment, unchanged for six days. Needs a direct chase.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Unresponsive <span class="count">(8)</span> <span class="tag unresp">AI following up</span></h3>
+    <div class="inline-list">
+      <span class="cat">Lash</span>Kim Bell, Jeannine Motycki, Victoria Howell, Cherissa Anderson, Amanda Shank, Erika Boston, Ali Stanley
+    </div>
+    <div class="inline-list">
+      <span class="cat">Tox</span>Jessica Bazzoli
+    </div>
+
+    <h3>Status to confirm <span class="count">(13)</span> <span class="tag confirm">To verify</span></h3>
+    <div class="inline-list">
+      6 new Meta-reported leads from 8 to 13 Oct (Lash 4, Tox 2). All 6 are active conversation.
+    </div>
+
+    <h3>Closed <span class="count">(4)</span> <span class="tag closed">Closed</span></h3>
+    <table class="lead-table">
+      <tbody>
+        <tr><td class="name">Ashley Markle</td><td>Not interested.</td></tr>
+        <tr><td class="name">Jeni Powell</td><td>Do not contact.</td></tr>
+        <tr><td class="name">Chelsea Huber</td><td>Tox, not interested.</td></tr>
+        <tr><td class="name">Dana Mariano</td><td>Tox, cannot travel to Washington.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Deka+ Washington &middot; Meta Ads update &middot; 13 Sep to 13 Oct 2026
+  </div>
+</footer>
+
 </body>
 </html>
